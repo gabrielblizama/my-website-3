@@ -1,0 +1,162 @@
+@import "components/banner.css";
+@import "components/container.css";
+@import "components/cards.css";
+@import "components/button.css";
+
+body {
+    font-family: "Lato", serif;
+    background-color: #f8f8f8; /* Soft neutral background */
+    color: #333333; /* Dark text for readability */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling for main headings */
+h1, h2, h3 {
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 0.5px;
+    text-align: center;
+    color: #343131; /* Dark gray, neutral color */
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #333333; /* Elegant dark tone */
+}
+
+h2 {
+    font-size: 48px;
+    font-weight: 500;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    color: #800000; /* Rich, elegant deep red tone to evoke luxury */
+    text-transform: uppercase; /* Adds a sophisticated touch */
+}
+
+h3 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #2D2D2D; /* Slightly darker shade for subtle luxury */
+}
+
+/* General text styling */
+.text {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #666666; /* Lighter gray for readability, less contrast */
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Styling for product description or paragraphs */
+p {
+    font-size: 18px;
+    color: #444444;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Links and hover effects */
+a {
+    color: #800000; /* Matching brand color */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #2D2D2D; /* Darker color when hovered, subtle */
+    text-decoration: underline;
+}
+
+/* Button styles for calls to action */
+button, .btn {
+    background-color: #800000; /* Deep red for action buttons */
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover, .btn:hover {
+    background-color: #b22222; /* Slightly lighter red on hover */
+    transform: translateY(-2px); /* Subtle hover effect */
+}
+
+/* Card design for jewelry pieces or products */
+.card {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 40px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Hover effect for products */
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.card-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 10px;
+    color: #343131;
+}
+
+.card-price {
+    font-size: 22px;
+    font-weight: 500;
+    color: #800000;
+    margin-top: 10px;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 36px;
+    }
+
+    .text {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    .text {
+        font-size: 14px;
+    }
+}

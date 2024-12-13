@@ -1,0 +1,91 @@
+/* Card container: Using flexbox for responsive design */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px; /* Adds spacing between cards */
+    margin: 0 auto;
+    padding: 40px 0; /* Adds spacing around the cards */
+}
+
+/* Individual card styles */
+.card {
+    flex-grow: 1;
+    flex-basis: 280px; /* Adjusted for better proportion */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center;
+    margin: 10px;
+    padding: 20px;
+    background-color: #ffffff; /* White background for a clean, refined look */
+    border-radius: 15px; /* Rounded corners for an elegant feel */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); /* Softer shadow for luxury feel */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Subtle hover effect */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+/* Card image styling */
+.card img {
+    width: 100%; /* Makes the image fill the width of the card */
+    height: auto;
+    max-width: 240px; /* Ensures the image isn’t too large */
+    border-radius: 10px; /* Rounded corners for the image */
+    margin-bottom: 20px; /* Adds spacing below the image */
+}
+
+/* Card header styling */
+.card_header {
+    font-size: 22px;
+    font-weight: 600;
+    color: #343131; /* Dark gray for a luxurious, neutral tone */
+    margin-bottom: 15px;
+    text-align: center;
+    letter-spacing: 0.5px; /* Adds slight spacing for refinement */
+}
+
+/* Icon for location (if applicable, e.g., store or office location) */
+.fa-location-dot {
+    padding-top: 10px;
+    font-size: 32px;
+    color: #800000; /* Deep red to match the theme */
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .cards {
+        justify-content: center; /* Centers the cards on smaller screens */
+        padding: 20px 0;
+    }
+
+    .card {
+        flex-basis: 45%; /* Adjusts card size on smaller screens */
+    }
+
+    .card_header {
+        font-size: 20px; /* Slightly smaller text on mobile */
+    }
+
+    .fa-location-dot {
+        font-size: 28px; /* Slightly smaller location icon */
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        flex-basis: 100%; /* Cards take full width on very small screens */
+    }
+
+    .card_header {
+        font-size: 18px; /* Further adjust font size */
+    }
+
+    .fa-location-dot {
+        font-size: 24px; /* Adjust icon size for very small screens */
+    }
+}

@@ -1,0 +1,55 @@
+/* Container for centralizing content with elegant width and auto margin */
+.container {
+    width: 90%; /* Adjusted to be more responsive */
+    max-width: 1200px; /* Prevents it from becoming too wide on large screens */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Banner container for centralized content */
+.banner_container {
+    text-align: center;
+    width: 100%; /* Ensures full width of the container is used */
+    margin-bottom: 40px; /* Adds spacing between banner and other sections */
+}
+
+/* Text container with soft background and padding */
+.text_con {
+    margin: 40px 0;
+    padding: 40px 0;
+    background-color: #f0f0f0; /* Softer, neutral background */
+    border-radius: 10px; /* Adds smooth corners for a refined look */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Adds subtle shadow for depth */
+}
+
+/* Styling for paragraph elements inside .text_con */
+.text_con p {
+    width: 90%;
+    max-width: 800px; /* Limits the paragraph width for readability */
+    margin: 0 auto;
+    font-size: 18px; /* Slightly smaller text for better flow */
+    line-height: 1.7;
+    color: #666666; /* Light gray for easy reading */
+    text-align: center; /* Centers text for a more balanced design */
+}
+
+/* Media query for smaller screen adjustments */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    .text_con p {
+        font-size: 16px; /* Adjusts font size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 100%;
+    }
+
+    .text_con p {
+        font-size: 14px; /* Further adjusts font size for smaller mobile screens */
+    }
+}
